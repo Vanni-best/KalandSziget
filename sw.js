@@ -1,5 +1,5 @@
 /* Simple offline cache for the kid-safe, dependency-free beta. */
-const CACHE = 'kaland-sziget-beta-20261008-v2';
+const CACHE = 'kaland-sziget-beta-20261008-v3';
 const ASSETS = ['./','./index.html','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./icons/icon-180.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
