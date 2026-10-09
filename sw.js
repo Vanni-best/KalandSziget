@@ -1,5 +1,5 @@
 /* Simple offline cache for the kid-safe, dependency-free beta. */
-const CACHE = 'kaland-sziget-learning-center-v4';
+const CACHE = 'kaland-sziget-pop-magic-v5';
 const ASSETS = ['./','./index.html','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./icons/icon-180.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
